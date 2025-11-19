@@ -9,6 +9,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Streaming from "./pages/Streaming";
+import Apps from "./pages/Apps";
+import Books from "./pages/Books";
+import AI from "./pages/AI";
+import Games from "./pages/Games";
+import Torrents from "./pages/Torrents";
 import CategoryPlaceholder from "./pages/CategoryPlaceholder";
 
 const queryClient = new QueryClient();
