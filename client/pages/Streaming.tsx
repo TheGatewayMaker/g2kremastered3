@@ -151,6 +151,16 @@ export default function Streaming() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
+    // Update meta tags for SEO
+    updateMetaTags({
+      title: "Streaming Resources - Gateway Links 2K25 | Free Movies & TV Shows",
+      description: "Discover curated streaming platforms and download sites for movies, TV shows, and online content. Gateway Links 2K25 provides the ultimate collection of streaming resources.",
+      url: "https://gatewaylinks2k25.com/streaming",
+      keywords: "streaming sites, movie streaming, TV shows, free movies, watch online, streaming links, cinema streaming"
+    });
+  }, []);
+
+  useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)",
