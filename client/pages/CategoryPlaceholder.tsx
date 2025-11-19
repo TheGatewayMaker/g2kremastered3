@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Sun, Moon, ArrowLeft } from "lucide-react";
+import { updateMetaTags } from "@/lib/meta-tags";
 
 interface CategoryPlaceholderProps {
   title: string;
